@@ -5,7 +5,7 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://localhost:3000'], // السماح بالـ localhost
+      origin: ['http://127.0.0.1:5500', 'http://localhost:3000'], // السماح بكل البورتات اللي بتشتغل عليها React
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD'],
     },
   },
