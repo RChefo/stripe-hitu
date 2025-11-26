@@ -5,8 +5,7 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      enabled: true,
-      origin: ['http://localhost:3000'], // البورت اللي React app شغالة عليه
+      origin: ['http://localhost:3000'], // السماح بالـ localhost
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD'],
     },
   },
