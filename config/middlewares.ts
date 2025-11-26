@@ -5,7 +5,11 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://127.0.0.1:5500', 'http://localhost:3000'], // السماح بكل البورتات اللي بتشتغل عليها React
+      origin: [
+        'http://127.0.0.1:5500', 
+        'http://localhost:3000',
+        'https://hitu-alpha.vercel.app'  // أضف هنا الدومين بتاع موقعك على Vercel
+      ],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD'],
     },
   },
